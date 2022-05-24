@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.tabSize": 4,
+		"editor.rulers": [120],
+		"editor.wordWrap": "off",
+		"files.exclude": {
+			"**/.git": true,
+			"**/.svn": true,
+			"**/.hg": true,
+			"**/CVS": true,
+			"**/.DS_Store": true,
+			"**/Thumbs.db": true,
+			"**/__pycache__": true,
+			"**/.idea": true,
+			"**/.vs": true,
+		},
+		// Change the env name below
+		"python.defaultInterpreterPath": "D:\\Users\\milke\\miniconda3\\envs\\change_me"
+	}
+}

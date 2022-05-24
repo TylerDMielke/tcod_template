@@ -9,7 +9,5 @@ debug/
 *.log
 
 # Workspace file
-*.code-workspace
-.vscode/
 .idea/
 .vs/
