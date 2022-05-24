@@ -1,7 +1,7 @@
 import tcod
 
 from constants import *
-from game_context import AtriochContext 
+from game_context import CustomContext 
 
 
 def main() -> None:
@@ -11,7 +11,7 @@ def main() -> None:
 	with tcod.context.new(
 		width=WIDTH_PIXEL, height=HEIGHT_PIXEL, tileset=tileset, title='TCOD Template'
 	) as context:
-		game_context: AtriochContext = AtriochContext(context)
+		game_context: CustomContext = CustomContext(context)
 
 		while True:
 			game_context = game_context.run()

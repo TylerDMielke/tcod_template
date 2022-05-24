@@ -5,14 +5,14 @@ import tcod
 import numpy as np
 
 
-class AtriochContext:
+class CustomContext:
 	def __init__(
 		self, context: tcod.context.Context,
 	):
 		self.context = context
 		self.drawables: list = []  # TODO: This will eventually be slow. Numpy?
 
-	def run(self) -> AtriochContext:
+	def run(self) -> CustomContext:
 		cont_update: bool = True
 		cont_draw: bool = True
 
@@ -23,10 +23,10 @@ class AtriochContext:
 		return self
 
 	def update(self) -> bool:
-		raise NotImplementedError('Base class: AtriochContext does not have an update() method.')
+		raise NotImplementedError('Base class: CustomContext does not have an update() method.')
 
 	def draw(self) -> bool:
-		raise NotImplementedError('Base class: AtriochContext does not have an draw() method.')
+		raise NotImplementedError('Base class: CustomContext does not have an draw() method.')
 	
 	def _draw_drawables(self, console: tcod.Console) -> None:
 		for drawable in self.drawables:
