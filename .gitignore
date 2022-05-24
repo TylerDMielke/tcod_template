@@ -1,0 +1,15 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Test Caches
+.pytest_cache
+
+# Log files
+debug/
+*.log
+
+# Workspace file
+*.code-workspace
+.vscode/
+.idea/
+.vs/
