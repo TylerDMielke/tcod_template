@@ -1,16 +1,12 @@
 from __future__ import annotations
-from typing import Optional
 
 import tcod
-import numpy as np
 
 
 class CustomContext:
-	def __init__(
-		self, context: tcod.context.Context,
-	):
+	def __init__(self, context: tcod.context.Context,):
 		self.context = context
-		self.drawables: list = []  # TODO: This will eventually be slow. Numpy?
+		self.drawables: list = []
 
 	def run(self) -> CustomContext:
 		cont_update: bool = True
