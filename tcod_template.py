@@ -14,7 +14,7 @@ from game_context import CustomContext
 def main() -> None:
 	"""The driving method of the tcod app."""
 	initialize_logging(log.INFO)
-	log.info(f'tcdo_template started at {datetime.now(pytz.timezone("America/Chicago")).time()}')
+	log.info(f'tcod_template started at {datetime.now(pytz.timezone("America/Chicago")).time()}')
 
 	tileset = load_tileset()
 
@@ -41,7 +41,7 @@ def load_tileset() -> tcod.tileset.Tileset:
 
 
 def initialize_logging(level: int) -> None:
-	"""Helper method that sets up logging for Artone."""
+	"""Helper method that sets up logging for TcodContext."""
 	logging_directory = Path('logs/')
 	logging_directory.mkdir(exist_ok=True)
 
@@ -63,6 +63,6 @@ if __name__ == '__main__':
 		with open(f'logs/{date.today()}.profile', 'w') as f:
 			stats = pstats.Stats(profile_file, stream=f)
 			stats.sort_stats(pstats.SortKey.CALLS, pstats.SortKey.TIME)
-			stats.print_stats('Repositories.*artone')
+			stats.print_stats('Repositories.*tcode_context')
 	else:
 		main()

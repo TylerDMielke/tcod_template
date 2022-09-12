@@ -45,7 +45,7 @@ class CustomContext:
 	
 	def close(self) -> None:
 		"""Stop this context's loop and exit the context."""
-		log.info(f'Artone exited at {datetime.now(pytz.timezone("America/Chicago")).time()}.')
+		log.info(f'tcod_context exited at {datetime.now(pytz.timezone("America/Chicago")).time()}.')
 		self.end_context = True
 
 	def _handle_input(self) -> None:
