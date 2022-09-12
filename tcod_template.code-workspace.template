@@ -19,7 +19,6 @@
 			"**/.idea": true,
 			"**/.vs": true,
 		},
-		// Change the env name below
-		"python.defaultInterpreterPath": "D:\\Users\\milke\\miniconda3\\envs\\change_me"
+		"python.defaultInterpreterPath": ""
 	}
 }
